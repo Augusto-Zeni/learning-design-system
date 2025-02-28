@@ -12,7 +12,5 @@ export default defineConfig({
     remarkPlugins: [],
     rehypePlugins: [],
   })],
-  base: process.env.NODE_ENV === 'production'
-    ? '/learning-design-system/'
-    : '/',
+  base: '/learning-design-system/',
 })

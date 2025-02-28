@@ -28,7 +28,7 @@ const config: StorybookConfig = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/learning-design-system'
+      config.base = '/learning-design-system/'
     }
 
     return config

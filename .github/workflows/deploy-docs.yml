@@ -1,4 +1,4 @@
-name: Deploy Docs
+name: Deploy docs
 
 on:
   push:
@@ -15,27 +15,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 16
 
       - run: npm ci
 
-      - name: Build Tokens
-        working-directory: ./packages/tokens
-        run: npm run build
-
-      - name: Build React
-        working-directory: ./packages/react
-        run: npm run build
-
-      - name: Build Storybook
-        working-directory: ./packages/docs
-        run: npm run build || (echo "Storybook build falhou" && exit 1)
+      - run: npm run build
 
       - name: Deploy storybook
         working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: touch storybook-static/.nojekyll && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Verificar saída do build
-        run: ls -R

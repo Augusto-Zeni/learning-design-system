@@ -29,10 +29,9 @@ const config: StorybookConfig = {
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
       config.base = '/learning-design-system/'
-    }
-
-    if (config.build) {
-      config.build.outDir = 'storybook-static'
+      config.build = config.build || {}
+      config.build.assetsDir = 'assets'
+      config.build.chunkSizeWarningLimit = 1600
     }
 
     return config

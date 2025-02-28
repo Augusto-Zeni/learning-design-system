@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "storybook-to-ghpages --ci --branch=gh-pages --existing-output-dir=storybook-static",
     "build": "storybook build"
   },
   "dependencies": {

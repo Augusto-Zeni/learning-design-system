@@ -19,19 +19,15 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Build Storybook
+        working-directory: ./packages/docs
+        run: npm run build
 
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy docs
-        uses: actions/upload-artifact@v4
-        with:
-          name: docs
-          path: ./packages/docs/storybook-static
       
       - name: Verificar saída do build
         run: ls -R ./packages/docs/storybook-static

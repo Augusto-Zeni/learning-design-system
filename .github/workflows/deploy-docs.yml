@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Storybook
         working-directory: ./packages/docs
-        run: npm run build
+        run: npm run build || (echo "Storybook build falhou" && exit 1)
 
       - name: Deploy storybook
         working-directory: ./packages/docs
@@ -30,4 +30,4 @@ jobs:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
       
       - name: Verificar saída do build
-        run: ls -R ./packages/docs/storybook-static
+        run: ls -R

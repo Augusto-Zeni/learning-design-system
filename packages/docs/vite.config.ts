@@ -7,9 +7,4 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   base: '/learning-design-system/',
-  build: {
-    outDir: 'storybook-static',
-    assetsDir: 'assets',
-    chunkSizeWarningLimit: 1600,
-  },
 })

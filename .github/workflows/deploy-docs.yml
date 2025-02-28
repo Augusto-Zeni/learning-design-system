@@ -32,3 +32,6 @@ jobs:
         with:
           name: docs
           path: ./packages/docs/storybook-static
+      
+      - name: Verificar saída do build
+        run: ls -R ./packages/docs/storybook-static

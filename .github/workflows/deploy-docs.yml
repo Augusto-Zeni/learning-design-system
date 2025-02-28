@@ -19,6 +19,14 @@ jobs:
 
       - run: npm ci
 
+      - name: Build Tokens
+        working-directory: ./packages/tokens
+        run: npm run build
+
+      - name: Build React
+        working-directory: ./packages/react
+        run: npm run build
+
       - name: Build Storybook
         working-directory: ./packages/docs
         run: npm run build || (echo "Storybook build falhou" && exit 1)

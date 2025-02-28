@@ -31,6 +31,10 @@ const config: StorybookConfig = {
       config.base = '/learning-design-system/'
     }
 
+    if (config.build) {
+      config.build.outDir = 'storybook-static'
+    }
+
     return config
   },
 }

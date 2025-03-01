@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@zeni-ignite-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,9 +13,9 @@
     "build": "storybook build"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
+    "@zeni-ignite-ui/eslint-config": "*",
+    "@zeni-ignite-ui/react": "*",
+    "@zeni-ignite-ui/tokens": "*",
     "@phosphor-icons/react": "^2.1.7",
     "@storybook/addon-a11y": "^8.6.2",
     "phosphor-react": "^1.4.1",

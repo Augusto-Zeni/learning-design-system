@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/react",
+  "name": "@zeni-ignite-ui/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@zeni-ignite-ui/eslint-config": "*",
+    "@zeni-ignite-ui/tokens": "*",
+    "@zeni-ignite-ui/ts-config": "*",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "react": "^19.0.0",

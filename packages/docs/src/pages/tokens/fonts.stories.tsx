@@ -1,5 +1,5 @@
-import { fonts } from '@ignite-ui/tokens'
 import { Meta, StoryObj } from '@storybook/react'
+import { fonts } from '@zeni-ignite-ui/tokens'
 import { TokensGrid } from '../../components/TokensGrid'
 
 const Fonts = () => {

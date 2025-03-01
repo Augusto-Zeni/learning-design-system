@@ -1,6 +1,6 @@
-import { Button, ButtonProps } from '@ignite-ui/react'
 import { ArrowLeft } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { Button, ButtonProps } from '@zeni-ignite-ui/react'
 
 export default {
   title: 'Form/Button',

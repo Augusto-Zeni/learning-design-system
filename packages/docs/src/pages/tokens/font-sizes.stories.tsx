@@ -1,5 +1,5 @@
-import { fontSizes } from '@ignite-ui/tokens'
 import { Meta, StoryObj } from '@storybook/react'
+import { fontSizes } from '@zeni-ignite-ui/tokens'
 import { TokensGrid } from '../../components/TokensGrid'
 
 const FontSizes = () => {

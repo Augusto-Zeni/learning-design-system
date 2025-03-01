@@ -1,5 +1,5 @@
-import { space } from '@ignite-ui/tokens'
 import { Meta, StoryObj } from '@storybook/react'
+import { space } from '@zeni-ignite-ui/tokens'
 import { TokensGrid } from '../../components/TokensGrid'
 
 const Space = () => {
